@@ -105,6 +105,7 @@
 //   }
 // }
 // var a = 'Hi';
+
 // function Sum(val1, val2) {
 //   var result = val1 + val2;
 // }

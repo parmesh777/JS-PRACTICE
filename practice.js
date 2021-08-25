@@ -147,23 +147,23 @@
 // ok(undefined);
 // ok(null);
 
-async function checkAsync() {
-  console.log(98);
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos/1")
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-  // console.log(res);
+// async function checkAsync() {
+//   console.log(98);
+//   const res = await fetch("https://jsonplaceholder.typicode.com/todos/1")
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
+// console.log(res);
 
-  console.log(100);
-}
-checkAsync();
+//   console.log(100);
+// }
+// checkAsync();
 // var names = [2, 6, 4, 8, 9, 5];
 // function fd(names) {
 //   return names.includes(8) && `${names.indexOf(8)} is the index of given args `;
-//   // console.log(a);
-//   // console.log(args);
-//   // return `${a} & ${args}`;
-//   // return args.reduce((acc, curr) => acc + curr, 0);
+// console.log(a);
+// console.log(args);
+// return `${a} & ${args}`;
+// return args.reduce((acc, curr) => acc + curr, 0);
 // }
 // console.log(fd(names));
 
@@ -175,12 +175,26 @@ checkAsync();
 // console.log(ages);
 // var person = {};
 
-console.log(98);
-async function checkAwait() {
-  const data = "parmesh";
-  const res = await data;
-  return res;
-}
+//?async/await
 
-console.log(100);
-checkAwait();
+// console.log(98);
+// async function checkAwait() {
+//   const data = "parmesh";
+//   const res = await data;
+//   return res;
+// }
+
+// console.log(100);
+// checkAwait();
+
+//?shallow comparision
+
+let d = "vasu";
+let e = "vasu";
+console.log(d === e);
+
+let a = [1, 2, 3];
+let b = [1, 2, 3];
+let c = a;
+console.log(a === b);
+console.log(a === c);

@@ -189,12 +189,56 @@
 
 //?shallow comparision
 
-let d = "vasu";
-let e = "vasu";
-console.log(d === e);
+// let d = "vasu";
+// let e = "vasu";
+// console.log(d === e);
 
 let a = [1, 2, 3];
 let b = [1, 2, 3];
 let c = a;
 console.log(a === b);
 console.log(a === c);
+
+// function findLargest(num1, num2, num3) {
+//   if (num1 > num2 && num1 > num3) console.log(num1);
+//   else if (num2 > num3) console.log(num2);
+//   else console.log(num3);
+// }
+// findLargest(87, 89, 65);
+
+// const sen = "parmesh is a javascript developer";
+// const gg = "mounika is a javascript developer";
+
+// function output(sen) {
+//   let g1 = sen.split(" ");
+//   let g2 = g1
+//     .map((word) => {
+//       return word[0].toUpperCase() + word.slice(1);
+//     })
+//     .join(" ");
+//   console.log(g2);
+// }
+// output(sen);
+
+// function kebab(sen) {
+//   let g1 = sen.split(" ");
+//   let g2 = g1
+//     .map((word) => {
+//       return word.toUpperCase();
+//     })
+//     .join("-");
+//   console.log(g2);
+// }
+// kebab(gg);
+
+// let list = [2, 3, 4, 5, 8];
+// let remove = (list, i) => {
+// return list.slice(0, i).concat(list.slice(i + 1));
+// return [...list.slice(0, i), ...list.slice(i + 1)];
+//   return list
+//     .slice(0, i)
+//     .concat([list[i] + 1])
+//     .concat(list.slice(i + 1));
+//   return [...list.slice(0, i), list[3] + 1, ...list.slice(i + 1)];
+// };
+// console.log(remove(list, 3));

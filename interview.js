@@ -61,7 +61,8 @@ const array = [
 
 //?Find the missing number
 
-// let shuffle = [3, 1, 2, 7, 6, 8, 10, 9, 5, 0];
+let shuffle = [3, 1, 2, 8, 10, 5, 0];
+
 // let set = shuffle.sort((a, b) => a - b);
 // console.log(set);
 // for (let i = 0; i <= 100; i++) {
@@ -70,3 +71,45 @@ const array = [
 //     break;
 //   }
 // }
+
+// const getHighest = (arr1) => {
+//   highest = 0;
+//   for (i = 0; i < arr1.length; i++) {
+//     if (highest < arr1[i]) {
+//       highest = arr1[i];
+//     }
+//   }
+//   return highest;
+// };
+
+// let large = getHighest(shuffle);
+
+// var newArray = [];
+// for (i = 0; i <= large; i++) {
+//   newArray.push(i);
+// }
+// console.log(newArray);
+
+// const missingElements = newArray.filter((ele) => !shuffle.includes(ele));
+
+// console.log(...(missingElements + "  are missing"));
+
+// var a = [5, 3, 6, 8, 10, 13, 9];
+
+// var missing = [];
+
+// const numArr = (arr, min, max) => {
+//   for (var i = min; i <= max; i++) {
+//     if (arr.indexOf(i) == -1) {
+//       missing.push(i);
+//     }
+//   }
+//   console.log(...missing);
+// };
+// numArr(a, Math.min(...a), Math.max(...a));
+
+var years = [1989, 2015, 2000, 1967, 2013, 1967, 2016];
+
+const output = years.sort((a, b) => b - a);
+const largestNum = [output[0], output[1]];
+console.log(...largestNum);

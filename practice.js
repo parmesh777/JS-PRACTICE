@@ -1,244 +1,51 @@
-// 'use strict';
-
-// console.log('Hey ya');
-
-// function User(uName, email) {
-//   this.uName = uName;
-//   this.email = email;
-//   console.log(this);
+// var person = {
+//   name: "mounika",
+// };
+// console.log(person);
+// function update(p) {
+//   console.log(p);
+//   p = "naresh";
+//   console.log(p);
 // }
-// const user = new User('rishi', 'nekkendhukura@gmail.com');
-// const rishi = new User('vijay', 'kk');
-// console.log(User.prototype);
+// update(person);
+// console.log(person);
 
-// constructor function
-// function Person() {
-//   this.name = 'John';
-// }
-
-// add a property
-// Person.prototype.age = 20;
-
-// creating an object
-// const person1 = new Person();
-
-// console.log(person1.age); // 20
-
-// changing the property value of prototype
-// Person.prototype = { age: 50 };
-
-// creating new object
-// const person3 = new Person();
-
-// console.log(person3.age); // 50
-// console.log(person1.age); // 20
-
-// console.log(test);
-
-// const pp = {
-//   gg: 'hh',
-//   hh: 'hh',
+// let persons = {
+//   name: "parmesh",
+//   salary: "35,000",
+//   id: "1",
+//   employeeDetails() {
+//     return `${this.name} id is ${this.id} and the salary is ${this.salary}`;
+//   },
 // };
 
-// let sym1 = Symbol(pp.gg);
-// let sym2 = Symbol(pp.hh);
-// console.log(sym1 === sym2);
-// let id = Symbol('sym1');
-// alert(id);
+// console.log(persons.employeeDetails());
 
-// const person76 = {
-//   name: 'harish',
+// let persons1 = {
+//   name: "mounika",
+//   salary: "40,000",
+//   id: "2",
 // };
-// const person98 = Object.create(person76, { ok: { value: 'EmployeeOne' } });
-// console.log(person98);
-// console.log(person76);
+// console.log(persons.employeeDetails.call(persons1));
 
-// var a = 'Hello';
+// let valuesArr = ["parmesh", "akhil", "gj", "lol", "ok", 9, 5, 8];
+// let removeValFrom = [0, 2, 4, 6];
 
-// function first() {
-//   var b = 'Hi';
-//   second();
-
-//   function second() {
-//     var c = 'Hey';
-//     console.log(a + b + c);
-//   }
-// }
-
-// first();
-// console.log(a);
-// var a = 'f';
-
-// var userData = [
-//   { name: 'paramesh', age: 24, gender: 'male' },
-//   { name: 'rishi', age: 34, gender: 'male' },
-//   { name: 'vijay', age: 14, gender: 'male' },
-//   { name: 'mounika', age: 24, gender: 'female' },
-//   { name: 'charishma', age: 18, gender: 'female' },
-//   { name: 'manohar', age: 32, gender: 'female' },
-// ];
-
-// let paramesh = userData.map(user => {
-//   return user;
-// });
-
-// for (let i = 0; i < paramesh.length; i++) {
-//   console.log(paramesh[i]);
-// }
-
-// console.log(paramesh);
-
-// console.log(parseInt('23px'));
-// console.log(Number('px23'));
-// let years = [12, 13, 14];
-// console.log(years);
-// let rag = [...years];
-// console.log(rag);
-
-// first();
-// function first() {
-//   var b = 'hlo';
-//   second();
-//   function second() {
-//     var c = 'hey';
-//     console.log(a + b + c);
-//   }
-// }
-// var a = 'Hi';
-
-// function Sum(val1, val2) {
-//   var result = val1 + val2;
-// }
-
-// var result = Sum(5, 5);
-// alert(result);
-// const person = {
-//   name: 'jonas',
-//   age: '38',
-// };
-// let person1 = { ...person, employeeId: '12' };
-// console.log(person1);
-// console.log(person1);
-
-// expected output: "My name is Matthew. Am I human? true"
-// const her3 = { ...her, ...her2, mowa: 'rishi' };
-// console.log(her3);
-// console.log(Symbol() === Symbol());
-// console.log(bg);
-// let bg;
-// const her = {
-//   name: 'gnyavi',
-//   age: '4',
-// };
-
-// const her2 = {
-//   ...her,
-// };
-// console.log(her);
-// console.log(her2);
-// let f = ['d', 'd', 'g'];
-// let d = [...f];
-// console.log(...f);
-// console.log(...d);
-
-// function ok(gg = 'gh') {
-//   console.log(gg);
-// }
-// ok(undefined);
-// ok(null);
-
-// async function checkAsync() {
-//   console.log(98);
-//   const res = await fetch("https://jsonplaceholder.typicode.com/todos/1")
-//     .then((response) => response.json())
-//     .then((json) => console.log(json));
+// let res = valuesArr.filter(
+//   (value, index) => removeValFrom.indexOf(index) == -1
+// );
 // console.log(res);
 
-//   console.log(100);
-// }
-// checkAsync();
-// var names = [2, 6, 4, 8, 9, 5];
-// function fd(names) {
-//   return names.includes(8) && `${names.indexOf(8)} is the index of given args `;
-// console.log(a);
-// console.log(args);
-// return `${a} & ${args}`;
-// return args.reduce((acc, curr) => acc + curr, 0);
-// }
-// console.log(fd(names));
+let fruits = [
+  { apples: 4 },
+  { mangoes: 4 },
+  { oranges: 3 },
+  { apples: 3 },
+  { mangoes: 6 },
+  { apples: 6 },
+  { bananas: 4 },
+];
 
-// var names = ["rishi", "parmesh", "vijay", "harish", "jassu"];
-
-// console.log(names);
-
-// var ages = new Array(20, 21, 32, 56);
-// console.log(ages);
-// var person = {};
-
-//?async/await
-
-// console.log(98);
-// async function checkAwait() {
-//   const data = "parmesh";
-//   const res = await data;
-//   return res;
-// }
-
-// console.log(100);
-// checkAwait();
-
-//?shallow comparision
-
-// let d = "vasu";
-// let e = "vasu";
-// console.log(d === e);
-
-let a = [1, 2, 3];
-let b = [1, 2, 3];
-let c = a;
-console.log(a === b);
-console.log(a === c);
-
-// function findLargest(num1, num2, num3) {
-//   if (num1 > num2 && num1 > num3) console.log(num1);
-//   else if (num2 > num3) console.log(num2);
-//   else console.log(num3);
-// }
-// findLargest(87, 89, 65);
-
-// const sen = "parmesh is a javascript developer";
-// const gg = "mounika is a javascript developer";
-
-// function output(sen) {
-//   let g1 = sen.split(" ");
-//   let g2 = g1
-//     .map((word) => {
-//       return word[0].toUpperCase() + word.slice(1);
-//     })
-//     .join(" ");
-//   console.log(g2);
-// }
-// output(sen);
-
-// function kebab(sen) {
-//   let g1 = sen.split(" ");
-//   let g2 = g1
-//     .map((word) => {
-//       return word.toUpperCase();
-//     })
-//     .join("-");
-//   console.log(g2);
-// }
-// kebab(gg);
-
-// let list = [2, 3, 4, 5, 8];
-// let remove = (list, i) => {
-// return list.slice(0, i).concat(list.slice(i + 1));
-// return [...list.slice(0, i), ...list.slice(i + 1)];
-//   return list
-//     .slice(0, i)
-//     .concat([list[i] + 1])
-//     .concat(list.slice(i + 1));
-//   return [...list.slice(0, i), list[3] + 1, ...list.slice(i + 1)];
-// };
-// console.log(remove(list, 3));
+var sale = {};
+let obj = Object.keys(fruit);
+fruits.forEach((fruit) => {});
